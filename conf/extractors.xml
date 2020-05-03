@@ -1,0 +1,544 @@
+<?xml version="1.0" ?>
+<config xmlns="http://bayan.ir" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://bayan.ir https://raw.githubusercontent.com/BayanGroup/nutch-custom-search/master/zal-extractor-core/src/main/resources/extractors.xsd">
+	<fields>
+		<field name="price" multi="true"/>
+		<field name="display" multi="true"/>
+		<field name="processor" multi="true"/>
+		<field name="storage" multi="true"/>
+		<field name="memory" multi="true"/>
+		<field name="graphics" multi="true"/>
+		<field name="charging-and-expansion" multi="true"/>
+		<field name="keyboard-and-trackpad" multi="true"/>
+		<field name="wireless" multi="true"/>
+		<field name="camera" multi="true"/>
+		<field name="video-support" multi="true"/>
+		<field name="audio" multi="true"/>
+		<field name="battery-and-power" multi="true"/>
+		<field name="operating-requirements" multi="true"/>
+		<field name="operating-system" multi="true"/>
+		<field name="accessibility" multi="true"/>
+		<field name="built-in-apps" multi="true"/>
+		<field name="in-the-box" multi="true"/>
+		<field name="limited-warranty-and-service" multi="true"/>
+		<field name="configure-to-order" multi="true"/>
+		<field name="accessories" multi="true"/>
+		<field name="title" />
+		<field name="size" multi="true"/>
+		<field name="weight" multi="true"/>
+		<field name="color" multi="true"/>
+		<field name="capacity" multi="true"/>
+		<field name="chip" multi="true"/>
+		<field name="Resistant" multi="true"/>
+		<field name="video-recording" multi="true"/>
+		<field name="truedepth-camera" multi="true"/>
+		<field name="face-ID" multi="true"/>
+		<field name="apple-pay" multi="true"/>
+		<field name="apple-card" multi="true"/>
+		<field name="carriers" multi="true"/>
+		<field name="cellular-wireless" multi="true"/>
+		<field name="location" multi="true"/>
+		<field name="video-calling" multi="true"/>
+		<field name="audio-calling" multi="true"/>
+		<field name="audio-playback" multi="true"/>
+		<field name="video-playback" multi="true"/>
+		<field name="siri" multi="true"/>
+		<field name="external-buttons-and-connectors" multi="true"/>
+		<field name="power-and-battery" multi="true"/>
+		<field name="sensors" multi="true"/>
+		<field name="built-in-Apps" multi="true"/>
+		<field name="free-apps-from-apple" multi="true"/>
+		<field name="headphones" multi="true"/>
+		<field name="SIM-Card" multi="true"/>
+		<field name="rating-for-hearing-aids" multi="true"/>
+		<field name="mail-attachment-support" multi="true"/>
+		<field name="system-requirements" multi="true"/>
+		<field name="environmental-requirements" multi="true"/>
+		<field name="languages" multi="true"/>
+	</fields>
+	<documents>
+		<document url="https://www\.apple\.com/iphone-xr/specs/" engine="css">
+			<extract-to field="title">
+				<text>
+					<expr value="#ac-localnav > div > div.ac-ln-content > div.ac-ln-title > a" />
+				</text>
+			</extract-to>
+
+			<extract-to field="color">
+				<constant value="xr" />
+			</extract-to>
+
+			<extract-to field="size">
+				<text>
+					<expr value=" figcaption:has(ul)" />
+				</text>
+			</extract-to>
+
+			<extract-to field="weight">
+				<text>
+					<expr value="div.techspecs-section.section-size-and-weight > div.techspecs-column > div" />
+				</text>
+			</extract-to>
+			<extract-to field="camera">
+				<text>
+					<expr value="div.techspecs-section.section-camera > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="capacity">
+				<text>
+					<expr value="div.techspecs-section.section-capacity > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="display">
+				<text>
+					<expr value="div.techspecs-section.section-display > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+
+			<extract-to field="chip">
+				<text>
+					<expr value="div.techspecs-section.section-chip > div.techspecs-column > div > div.column.copy.large-10.medium-9.small-12.small-push-0 > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="Resistant">
+				<text>
+					<expr value="div.techspecs-section.section-splash-water-resistance > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+
+			<extract-to field="video-recording">
+				<text>
+					<expr value="div.techspecs-section.section-video-recording > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+
+			<extract-to field="truedepth-camera">
+				<text>
+					<expr value="div.techspecs-section.section-truedepth-camera > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="face-ID">
+				<text>
+					<expr value="div.techspecs-section.section-face-id > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="apple-pay">
+				<text>
+					<expr value="div.techspecs-section.section-apple-pay > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="apple-card">
+				<text>
+					<expr value="div.techspecs-section.section-apple-card > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="carriers">
+				<text>
+					<expr value="div.techspecs-section.section-carriers > div.techspecs-column > div > div > figure > span" />
+				</text>
+			</extract-to>
+			<extract-to field="cellular-wireless">
+				<text>
+					<expr value="div.techspecs-section.section-cellular-and-wireless > div.techspecs-column > div" />
+				</text>
+			</extract-to>
+			<extract-to field="location">
+				<text>
+					<expr value="div.techspecs-section.section-location > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="video-calling">
+				<text>
+					<expr value="div.techspecs-section.section-video-calling > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="audio-calling">
+				<text>
+					<expr value="div.techspecs-section.section-audio-calling > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="audio-playback">
+				<text>
+					<expr value="div.techspecs-section.section-audio-playback > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="video-playback">
+				<text>
+					<expr value="div.techspecs-section.section-video-playback > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="siri">
+				<text>
+					<expr value="div.techspecs-section.section-siri > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="external-buttons-and-connectors">
+				<text>
+					<expr value="div.techspecs-section.section-external > div.techspecs-column > figure > div.diagram-text " />
+				</text>
+			</extract-to>
+			<extract-to field="power-and-battery">
+				<text>
+					<expr value="div.techspecs-section.section-power-and-battery > div.techspecs-column > div" />
+				</text>
+			</extract-to>
+			<extract-to field="sensors">
+				<text>
+					<expr value="div.techspecs-section.section-sensors > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="operating-system">
+				<text>
+					<expr value="div.techspecs-section.section-os > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="accessibility">
+				<text>
+					<expr value="div.techspecs-section.section-accessibility > div" />
+				</text>
+			</extract-to>
+			<extract-to field="built-in-Apps">
+				<text>
+					<expr value="div.techspecs-section.section-built-in-apps > div.techspecs-column > div > div > div.techspecs-appgrid-app-label" />
+				</text>
+			</extract-to>
+			<extract-to field="free-apps-from-apple">
+				<text>
+					<expr value="div.techspecs-section.section-free-apps > div.techspecs-column > div > div > div.techspecs-appgrid-app-label" />
+				</text>
+			</extract-to>
+			<extract-to field="headphones">
+				<text>
+					<expr value="div.techspecs-section.section-headphones > div.techspecs-column" />
+				</text>
+			</extract-to>
+			<extract-to field="SIM-Card">
+				<text>
+					<expr value="div.techspecs-section.section-sim > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="rating-for-hearing-aids">
+				<text>
+					<expr value="div.techspecs-section.section-mail" />
+				</text>
+			</extract-to>
+			<extract-to field="mail-attachment-support">
+				<text>
+					<expr value="div.techspecs-section.section-mail > div.techspecs-column" />
+				</text>
+			</extract-to>
+			<extract-to field="system-requirements">
+				<text>
+					<expr value="div.techspecs-section.section-system-requirements > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="environmental-requirements">
+				<text>
+					<expr value="div.techspecs-section.section-environmental-requirements > div.techspecs-column > div" />
+				</text>
+			</extract-to>
+			<extract-to field="languages">
+				<text>
+					<expr value="div.techspecs-section.section-languages > div.techspecs-column.row-languages > div" />
+				</text>
+			</extract-to>
+			<extract-to field="in-the-box">
+				<text>
+					<expr value="div.techspecs-section.section-in-the-box > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+		</document>
+		<document url="https://www\.apple\.com/i(.(?!xr))*/specs/" engine="css">
+			<extract-to field="title">
+				<text>
+					<expr value="#ac-localnav > div > div.ac-ln-content > div.ac-ln-title > a" />
+				</text>
+			</extract-to>
+
+			<extract-to field="color">
+				<constant value="any-else" />
+			</extract-to>
+
+			<extract-to field="size">
+				<text>
+					<expr value=" figcaption:has(ul)" />
+				</text>
+			</extract-to>
+
+			<extract-to field="weight">
+				<text>
+					<expr value="div.techspecs-section.section-size-and-weight > div > div.techspecs-column > div" />
+				</text>
+			</extract-to>
+			<extract-to field="camera">
+				<text>
+					<expr value="div.techspecs-section.section-camera > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="capacity">
+				<text>
+					<expr value="div.techspecs-section.section-capacity > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="display">
+				<text>
+					<expr value="div.techspecs-section.section-display > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+
+			<extract-to field="chip">
+				<text>
+					<expr value="div.techspecs-section.section-chip > div > div.techspecs-column > div > div.column.copy.large-10.medium-9.small-12.small-push-0 > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="Resistant">
+				<text>
+					<expr value="div.techspecs-section.section-splash-water-resistance > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+
+			<extract-to field="video-recording">
+				<text>
+					<expr value="div.techspecs-section.section-video-recording > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+
+			<extract-to field="truedepth-camera">
+				<text>
+					<expr value="div.techspecs-section.section-truedepth-camera > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="face-ID">
+				<text>
+					<expr value="div.techspecs-section.section-face-id > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="apple-pay">
+				<text>
+					<expr value="div.techspecs-section.section-apple-pay > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="apple-card">
+				<text>
+					<expr value="div.techspecs-section.section-apple-card > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="carriers">
+				<text>
+					<expr value="div.techspecs-section.section-carriers > div > div.techspecs-column > div > div > figure > span" />
+				</text>
+			</extract-to>
+			<extract-to field="cellular-wireless">
+				<text>
+					<expr value="div.techspecs-section.section-cellular-and-wireless > div > div.techspecs-column > div" />
+				</text>
+			</extract-to>
+			<extract-to field="location">
+				<text>
+					<expr value="div.techspecs-section.section-location > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="video-calling">
+				<text>
+					<expr value="div.techspecs-section.section-video-calling > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="audio-calling">
+				<text>
+					<expr value="div.techspecs-section.section-audio-calling > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="audio-playback">
+				<text>
+					<expr value="div.techspecs-section.section-audio-playback > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="video-playback">
+				<text>
+					<expr value="div.techspecs-section.section-video-playback > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="siri">
+				<text>
+					<expr value="div.techspecs-section.section-siri > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="external-buttons-and-connectors">
+				<text>
+					<expr value="div.techspecs-section.section-external > div > div.techspecs-column > figure > div.diagram-text " />
+				</text>
+			</extract-to>
+			<extract-to field="power-and-battery">
+				<text>
+					<expr value="div.techspecs-section.section-power-and-battery > div > div.techspecs-column > div" />
+				</text>
+			</extract-to>
+			<extract-to field="sensors">
+				<text>
+					<expr value="div.techspecs-section.section-sensors > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="operating-system">
+				<text>
+					<expr value="div.techspecs-section.section-os > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="accessibility">
+				<text>
+					<expr value="div.techspecs-section.section-accessibility > div" />
+				</text>
+			</extract-to>
+			<extract-to field="built-in-Apps">
+				<text>
+					<expr value="div.techspecs-section.section-built-in-apps > div > div.techspecs-column > div > div > div.techspecs-appgrid-app-label" />
+				</text>
+			</extract-to>
+			<extract-to field="free-apps-from-apple">
+				<text>
+					<expr value="div.techspecs-section.section-free-apps > div > div.techspecs-column > div > div > div.techspecs-appgrid-app-label" />
+				</text>
+			</extract-to>
+			<extract-to field="headphones">
+				<text>
+					<expr value="div.techspecs-section.section-headphones > div > div.techspecs-column" />
+				</text>
+			</extract-to>
+			<extract-to field="SIM-Card">
+				<text>
+					<expr value="div.techspecs-section.section-sim > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="rating-for-hearing-aids">
+				<text>
+					<expr value="div.techspecs-section.section-mail" />
+				</text>
+			</extract-to>
+			<extract-to field="mail-attachment-support">
+				<text>
+					<expr value="div.techspecs-section.section-mail > div > div.techspecs-column" />
+				</text>
+			</extract-to>
+			<extract-to field="system-requirements">
+				<text>
+					<expr value="div.techspecs-section.section-system-requirements > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="environmental-requirements">
+				<text>
+					<expr value="div.techspecs-section.section-environmental-requirements > div > div.techspecs-column > div" />
+				</text>
+			</extract-to>
+			<extract-to field="languages">
+				<text>
+					<expr value="div.techspecs-section.section-languages > div > div.techspecs-column.row-languages > div" />
+				</text>
+			</extract-to>
+			<extract-to field="in-the-box">
+				<text>
+					<expr value="div.techspecs-section.section-in-the-box > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+		</document>
+		<document url="https://www\.apple\.com/macbook.*/specs/" engine="css">
+			<extract-to field="color">
+				<constant value="mac-color" />
+			</extract-to>
+			<extract-to field="price">
+				<text>
+					<expr value="#\31 6-inch-macbook-pro > div.techspecs-section.section-price > div > div.techspecs-column > div > div" />
+				</text>
+			</extract-to>
+			<extract-to field="display">
+				<text>
+					<expr value="#\31 6-inch-macbook-pro > div.techspecs-section.section-display > div > div.techspecs-column" />
+				</text>
+			</extract-to>
+			<extract-to field="processor">
+				<text>
+					<expr value="#\31 6-inch-macbook-pro > div.techspecs-section.section-processor > div > div > p" />
+				</text>
+			</extract-to>
+			<extract-to field="storage">
+				<text>
+					<expr value="#\31 6-inch-macbook-pro > div.techspecs-section.section-storage > div > div.techspecs-column > div > div.column.large-6 > p" />
+				</text>
+			</extract-to>
+			<extract-to field="memory">
+				<text>
+					<expr value="#\31 6-inch-macbook-pro > div.techspecs-section.section-memory > div > div.techspecs-column > div > p" />
+				</text>
+			</extract-to>
+			<extract-to field="graphics">
+				<text>
+					<expr value="#\31 6-inch-macbook-pro > div.techspecs-section.section-graphics > div > div > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="charging-and-expansion">
+				<text>
+					<expr value="#\31 6-inch-macbook-pro > div.techspecs-section.section-charging-and-expansion > div > div.techspecs-column.small-spans-2-columns" />
+				</text>
+			</extract-to>
+			<extract-to field="keyboard-and-trackpad">
+				<text>
+					<expr value="#\31 6-inch-macbook-pro > div.techspecs-section.section-keyboard-and-trackpad > div > div.techspecs-column.small-spans-2-columns > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="wireless">
+				<text>
+					<expr value="#\31 6-inch-macbook-pro > div.techspecs-section.section-wireless > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="camera">
+				<text>
+					<expr value="#\31 6-inch-macbook-pro > div.techspecs-section.section-camera > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="video-support">
+				<text>
+					<expr value="#\31 6-inch-macbook-pro > div.techspecs-section.section-video-support > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="audio">
+				<text>
+					<expr value="#\31 6-inch-macbook-pro > div.techspecs-section.section-audio > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="battery-and-power">
+				<text>
+					<expr value="#\31 6-inch-macbook-pro > div.techspecs-section.section-battery-and-power > div > div.techspecs-column.small-spans-2-columns > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="operating-requirements">
+				<text>
+					<expr value="#\31 6-inch-macbook-pro > div.techspecs-section.section-operating-requirements > div > div.techspecs-column > p" />
+				</text>
+			</extract-to>
+			<extract-to field="operating-system">
+				<text>
+					<expr value="#\31 6-inch-macbook-pro > div.techspecs-section.section-operating-system > div > div.techspecs-column > p" />
+				</text>
+			</extract-to>
+			<extract-to field="accessibility">
+				<text>
+					<expr value="#\31 6-inch-macbook-pro > div.techspecs-section.section-accessibility > div > div.techspecs-column > div" />
+				</text>
+			</extract-to>
+			<extract-to field="built-in-apps">
+				<text>
+					<expr value="#\31 6-inch-macbook-pro > div.techspecs-section.section-built-in-apps > div > div.techspecs-column > div > figure > figcaption" />
+				</text>
+			</extract-to>
+			<extract-to field="in-the-box">
+				<text>
+					<expr value="#\31 6-inch-macbook-pro > div.techspecs-section.section-in-the-box > div > div.techspecs-column > ul > li" />
+				</text>
+			</extract-to>
+			<extract-to field="limited-warranty-and-service">
+				<text>
+					<expr value="#\31 6-inch-macbook-pro > div.techspecs-section.section-limited-warranty-and-service > div > div.techspecs-column > p" />
+				</text>
+			</extract-to>
+			
+		</document>
+	</documents>
+</config>

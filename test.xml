@@ -1,0 +1,265 @@
+<extract-to field="price">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="display">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="processor">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="storage">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="memory">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="graphics">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="charging-and-expansion">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="keyboard-and-trackpad">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="wireless">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="camera">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="video-support">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="audio">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="battery-and-power">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="operating-requirements">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="operating-system">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="accessibility">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="built-in-apps">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="in-the-box">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="limited-warranty-and-service">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="configure-to-order">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="accessories">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="title">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="size">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="weight">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="color">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="capacity">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="chip">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="Resistant">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="video-recording">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="truedepth-camera">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="face-ID">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="apple-pay">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="apple-card">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="carriers">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="cellular-wireless">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="location">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="video-calling">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="audio-calling">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="audio-playback">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="video-playback">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="siri">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="external-buttons-and-connectors">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="power-and-battery">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="sensors">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="built-in-Apps">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="free-apps-from-apple">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="headphones">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="SIM-Card">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="rating-for-hearing-aids">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="mail-attachment-support">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="system-requirements">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="environmental-requirements">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>
+<extract-to field="languages">
+<text>
+					<expr value="" />
+				</text>
+			</extract-to>

@@ -1,0 +1,18 @@
+<add>   
+   <doc>     
+      <field name = "id">https://www.apple.com/iphone-11-pro/specs/</field>      
+      <field name = "color" update = "add">Gold, Space Gray, Silver, Midnight Green</field>      
+   </doc> 
+   <doc>     
+      <field name = "id">https://www.apple.com/iphone-se/specs/</field>      
+      <field name = "color" update = "add">Black, White, Red</field>      
+   </doc>
+   <doc>     
+      <field name = "id">https://www.apple.com/iphone-xr/specs/</field>      
+      <field name = "color" update = "add">Red, Yellow, White, Coral, Black, Blue</field>      
+   </doc>
+   <doc>     
+      <field name = "id">https://www.apple.com/iphone-11/specs/</field>      
+      <field name = "color" update = "add">Black, Green, Yellow, Purple, Red, White</field>      
+   </doc>
+</add>

@@ -1,0 +1,191 @@
+// [
+//     {
+//         <extract-to field="Color">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="title">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Size">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Capacity">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+//             </extract-to>
+//             <extract-to field="Weight">
+//             <text>
+//                 <expr value="" />
+//             </text>
+//         </extract-to>
+//         <extract-to field="Display">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+        
+//         <extract-to field="Chip">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Splash, Water, and Dust Resistant">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Video Recording">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Camera">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="TrueDepth Camera">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Face ID">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Apple Pay">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Apple Card">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Carriers">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Cellular and Wireless">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Location">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Video Calling">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Audio Calling">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Audio Playback">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Video Playback">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Siri">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="External Buttons and Connectors">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Power and Battery">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Sensors">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Operating System">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Accessibility">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Built-in Apps">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Free Apps from Apple">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Headphones">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="SIM Card">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Rating for Hearing Aids">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Mail Attachment Support">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="System Requirements">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Environmental Requirements">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="Languages">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+//         <extract-to field="In the Box">
+// 				<text>
+// 					<expr value="" />
+// 				</text>
+// 			</extract-to>
+
+//     }
+// ]#main > section.section.section-techspecs > div:nth-child(1) > div > div.techspecs-section.section-display > div > div.techspecs-column > ul
